@@ -40,6 +40,13 @@ export default defineType({
       validation: (r) => r.required(),
     }),
     defineField({
+      name: 'headlineGoal',
+      title: 'Headline goal',
+      type: 'text',
+      rows: 2,
+      description: 'The bold sentence under the concept title (e.g. "Enables an organization to take responsibility for its actions...").',
+    }),
+    defineField({
       name: 'summary',
       title: 'Summary / narrative context',
       type: 'array',
