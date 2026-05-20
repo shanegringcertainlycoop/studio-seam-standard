@@ -18,10 +18,9 @@ const client = createClient({
 
 const ICONS: Record<string, string> = {
   'pillar-social-impact': 'https://seamcertification.org/images/social-impact/bridge.png',
-  // Add others as you have them:
-  // 'pillar-social-responsibility': '...',
-  // 'pillar-social-justice':        '...',
-  // 'pillar-social-accountability': '...',
+  'pillar-social-responsibility': 'https://seamcertification.org/images/social-responsibility/compass.png',
+  'pillar-social-justice': 'https://seamcertification.org/images/social-justice/scales.png',
+  'pillar-social-accountability': 'https://seamcertification.org/images/social-accountability/lantern.png',
 }
 
 async function run() {
