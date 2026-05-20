@@ -25,8 +25,8 @@ export default defineType({
       group: 'header',
       description: 'The canonical SEAM activity identifier (e.g. "IAa1.1", "SJa2.4"). Used in cross-references.',
       validation: (r) =>
-        r.required().regex(/^[A-Z]{2}a[0-9]+\.[0-9]+$/, {
-          name: 'activity ID (e.g. IAa1.1)',
+        r.required().regex(/^[A-Z]{2}a[0-9]+(\.[0-9]+)?$/, {
+          name: 'activity ID (e.g. IAa1.1 or SIa1)',
         }),
     }),
     defineField({
