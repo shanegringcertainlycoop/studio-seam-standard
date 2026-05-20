@@ -153,6 +153,14 @@ export default defineType({
 
     // ─── Documentation ──────────────────────────────────────
     defineField({
+      name: 'documentationLeadIn',
+      title: 'Lead-in text (optional)',
+      type: 'array',
+      of: [{ type: 'richText' }],
+      group: 'documentation',
+      description: 'Optional paragraph(s) before the documentation items (e.g. TGa2.1 explains the SEAM purpose of applying ISO 26000).',
+    }),
+    defineField({
       name: 'documentationItems',
       title: 'Documentation items',
       type: 'array',
