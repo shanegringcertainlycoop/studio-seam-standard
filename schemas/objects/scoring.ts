@@ -51,6 +51,14 @@ export default defineType({
       type: 'scoringRubric',
     }),
     defineField({
+      name: 'additionalPointsEligibility',
+      title: 'Additional points eligibility (optional)',
+      type: 'array',
+      of: [{ type: 'richText' }],
+      description: 'Optional eligibility statement for the additional points (e.g. "These points are only assigned if all points in the Points assignment section are earned").',
+      hidden: ({ parent }) => !parent?.additionalPointsAssignment,
+    }),
+    defineField({
       name: 'additionalPointsLogic',
       title: 'Additional points logic',
       type: 'string',
