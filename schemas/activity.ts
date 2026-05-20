@@ -207,7 +207,7 @@ export default defineType({
       name: 'referencedSources',
       title: 'Referenced Sources',
       type: 'array',
-      of: [{ type: 'reference', to: [{ type: 'bibliographyEntry' }] }],
+      of: [{ type: 'referencedSource' }],
       group: 'sources',
     }),
 

@@ -27,6 +27,7 @@ import guidanceResources from './objects/guidanceResources'
 import guidanceExample from './objects/guidanceExample'
 import guidanceNote from './objects/guidanceNote'
 import guidanceImage from './objects/guidanceImage'
+import referencedSource from './objects/referencedSource'
 import richText from './objects/richText'
 
 export const schemaTypes = [
@@ -61,5 +62,6 @@ export const schemaTypes = [
   guidanceExample,
   guidanceNote,
   guidanceImage,
+  referencedSource,
   richText,
 ]
