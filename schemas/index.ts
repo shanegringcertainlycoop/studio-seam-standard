@@ -6,6 +6,7 @@ import bibliographyEntry from './bibliographyEntry'
 import editorialNote from './editorialNote'
 import glossaryTerm from './glossaryTerm'
 import appendix from './appendix'
+import introSection from './introSection'
 
 import ratingSystemApplication from './objects/ratingSystemApplication'
 import requirementGroup from './objects/requirementGroup'
@@ -40,6 +41,7 @@ export const schemaTypes = [
   editorialNote,
   glossaryTerm,
   appendix,
+  introSection,
 
   // Objects
   ratingSystemApplication,
