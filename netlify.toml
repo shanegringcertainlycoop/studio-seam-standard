@@ -1,0 +1,12 @@
+[build]
+  command = "npm install --ignore-scripts && npm run build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "20"
+
+# Sanity studio is a SPA — all routes resolve to index.html
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
