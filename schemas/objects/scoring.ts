@@ -65,5 +65,12 @@ export default defineType({
       description: 'Some activities (e.g. SJa1.1) use OR semantics: pick +1 OR +2, not both.',
       hidden: ({ parent }) => !parent?.additionalPointsAssignment,
     }),
+    defineField({
+      name: 'notes',
+      title: 'Notes (rendered after the rubric)',
+      type: 'array',
+      of: [{ type: 'richText' }],
+      description: 'Optional "Note:" callout that appears after the points assignment table (e.g. IAa3.1).',
+    }),
   ],
 })
