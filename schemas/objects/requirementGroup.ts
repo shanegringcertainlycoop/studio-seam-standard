@@ -21,6 +21,13 @@ export default defineType({
       },
     }),
     defineField({
+      name: 'headingFootnote',
+      title: 'Heading footnote (optional)',
+      type: 'reference',
+      to: [{ type: 'bibliographyEntry' }, { type: 'editorialNote' }],
+      description: 'Optional superscript marker on the group heading (e.g. "Act to Avoid Harm²⁰").',
+    }),
+    defineField({
       name: 'items',
       title: 'Requirement items',
       type: 'array',

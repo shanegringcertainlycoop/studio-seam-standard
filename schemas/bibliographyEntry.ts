@@ -10,8 +10,8 @@ export default defineType({
       name: 'number',
       title: 'Number',
       type: 'number',
-      description: 'The canonical sequential number used in citations (e.g. 16, 22, 113).',
-      validation: (r) => r.required().integer().positive(),
+      description: 'The canonical sequential number used in citations (e.g. 16, 22, 113). Leave blank for sources cited only in a "Referenced Source" list, not as a numbered footnote.',
+      validation: (r) => r.integer().positive(),
     }),
     defineField({
       name: 'citation',
@@ -44,8 +44,9 @@ export default defineType({
   preview: {
     select: { number: 'number', title: 'title', citation: 'citation' },
     prepare({ number, title, citation }) {
+      const display = title || (citation as string)?.slice(0, 80) || 'Untitled'
       return {
-        title: `[${number}] ${title || (citation as string)?.slice(0, 80) || 'Untitled'}`,
+        title: number !== undefined ? `[${number}] ${display}` : display,
         subtitle: title ? (citation as string)?.slice(0, 100) : undefined,
       }
     },
