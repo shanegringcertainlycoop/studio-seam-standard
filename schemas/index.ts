@@ -7,6 +7,7 @@ import editorialNote from './editorialNote'
 import glossaryTerm from './glossaryTerm'
 import appendix from './appendix'
 import introSection from './introSection'
+import seal from './seal'
 
 import ratingSystemApplication from './objects/ratingSystemApplication'
 import requirementGroup from './objects/requirementGroup'
@@ -42,6 +43,7 @@ export const schemaTypes = [
   glossaryTerm,
   appendix,
   introSection,
+  seal,
 
   // Objects
   ratingSystemApplication,

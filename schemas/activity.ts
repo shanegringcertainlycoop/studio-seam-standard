@@ -91,6 +91,14 @@ export default defineType({
       type: 'ratingSystemApplication',
       group: 'header',
     }),
+    defineField({
+      name: 'markEligible',
+      title: 'Mark eligible',
+      type: 'boolean',
+      group: 'header',
+      description: 'When true, this activity can be earned standalone as a SEAM Mark.',
+      initialValue: false,
+    }),
 
     // ─── Scope ──────────────────────────────────────────────
     defineField({
