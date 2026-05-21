@@ -99,6 +99,15 @@ export default defineType({
       description: 'When true, this activity can be earned standalone as a SEAM Mark.',
       initialValue: false,
     }),
+    defineField({
+      name: 'sdgs',
+      title: 'UN SDG alignment',
+      type: 'array',
+      of: [{ type: 'number' }],
+      group: 'header',
+      description: 'UN Sustainable Development Goal numbers this activity aligns with (per Appendix A).',
+      options: { layout: 'tags' },
+    }),
 
     // ─── Scope ──────────────────────────────────────────────
     defineField({
